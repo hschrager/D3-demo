@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<body> 
+  <style>
+    .inGreen { color: green; }
+  </style>
+  
+  <h1 class="inGreen">D3 Demo (D4)</h1>
+
+  <svg id="dataviz_area" height=200 width=450></svg>
+  
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <script>
+    var svg = d3.select("#dataviz_area")
+    svg.append("circle").attr("cx", 10).attr("cy", 10).attr("r", 40).style("fill", "blue");
+    svg.append("circle").attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+    svg.append("circle").attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+  </script>
+
+</body>
+
